@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SpeedyKeyz</title>
+    <link rel="icon" href="../images/typing-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Moon+Dance&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <h1>SpeedyKeyz</h1>
+        </div>
+        <nav>
+            <ul>
+                <li id="showLeaderBoard">Leaderboard</li>
+                <li>|</li>
+                <li id="showProfile">Profile</li>
+                <li>|</li>
+                <li id="showAlert">Help & Support</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="welcome-section">
+        <article>
+            <main id="leaderBoard">
+                <h3>Leaderboard</h3>
+                <table>
+                    <tr>
+                        <th>#rank</th>
+                        <th>Name</th>
+                        <th>Correct Words</th>
+                        <th>Wrong Words</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="userName">abc</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <a href="./index.html">Start New Game</a>
+            </main>
+            <main id="userProfile">
+                <h3>username</h3>
+                <span>Best Score:</span>
+                <span>1</span><br>
+                <button id="play">Play</button>
+                <button>Logout</button>
+            </main>
+            <main id="display-details">
+                <span>Correct Words:</span>
+                <span id="correctWords">0</span>
+                <span>|</span>
+                <span>Time:</span>
+                <span id="timer">60s</span>
+            </main>
+            <main id="text-part">
+                <div id="wordContainer">
+                </div>
+                <section id="input-part">
+                    <textarea name="" cols="" rows="" id="textArea" placeholder="enter the above text here" autofocus
+                        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                    <button id="enter" onclick="getUserInput()">Enter</button>
+                </section>
+            </main>
+            <main id="option-part">
+                <div id="level">
+                    <p id="easy">Easy</p>
+                    <p id="medium">Medium</p>
+                    <p id="hard">Hard</p>
+                </div>
+                <div class="set-timer">
+                    <span id="30sec">30s</span>
+                    <span>|</span>
+                    <span id="60sec">60s</span>
+                </div>
+                <button id="start">Start</button>
+            </main>
+            <main id="scoreBoard">
+                <h3>Your Score</h3>
+                <table>
+                    <tr>
+                        <th>#rank</th>
+                        <th>Name</th>
+                        <th>Correct Words</th>
+                        <th>Wrong Words</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>abc</td>
+                        <td id="myCorrectWords">0</td>
+                        <td id="myWrongWords">0</td>
+                    </tr>
+                </table>
+                <a href="./index.html" id="replayBtn">Replay</a>
+            </main>
+        </article>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
